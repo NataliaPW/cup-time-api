@@ -1,6 +1,6 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
-import { readFile } from "fs/promises";
+import cors from "cors";
 import path from "path";
 import "express-async-errors";
 import swaggerDocument from "./docs/swagger.json" assert { type: "json" };
@@ -12,6 +12,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 let products = {};
+
+app.use(cors());
 
 // Middleware для обработки JSON данных
 app.use(express.json());
