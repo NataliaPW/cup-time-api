@@ -3,37 +3,37 @@
     {
       "id": 1,
       "title": "Кокосовая матча",
-      "img": "https://example.com/images/tea1.jpg",
+      "img": "/images/tea1.jpg",
       "price": 390
     },
     {
       "id": 2,
       "title": "Зеленый индонезийский чай",
-      "img": "https://example.com/images/tea2.jpg",
+      "img": "/images/tea2.jpg",
       "price": 340
     },
     {
       "id": 3,
       "title": "Черный чай из Эфиопии",
-      "img": "https://example.com/images/tea3.jpg",
+      "img": "/images/tea3.jpg",
       "price": 380
     },
     {
       "id": 4,
       "title": "Черный чай из Калифорнии",
-      "img": "https://example.com/images/tea4.jpg",
+      "img": "/images/tea4.jpg",
       "price": 360
     },
     {
       "id": 5,
       "title": "Органическая веганская матча",
-      "img": "https://example.com/images/tea5.jpg",
+      "img": "/images/tea5.jpg",
       "price": 400
     },
     {
       "id": 6,
       "title": "Чай черный Лакандона",
-      "img": "https://example.com/images/tea6.jpg",
+      "img": "/images/tea6.jpg",
       "price": 390
     }
   ],
@@ -41,37 +41,37 @@
     {
       "id": 7,
       "title": "Chamerlain Coffee Artwork by Alina Shvyrlova",
-      "img": "https://example.com/images/coffee1.jpg",
+      "img": "/images/coffee1.jpg",
       "price": 450
     },
     {
       "id": 8,
       "title": "Гватемала Эль Морито",
-      "img": "https://example.com/images/coffee2.jpg",
+      "img": "/images/coffee2.jpg",
       "price": 480
     },
     {
       "id": 9,
       "title": "MARU Colombia Palestina",
-      "img": "https://example.com/images/coffee3.jpg",
+      "img": "/images/coffee3.jpg",
       "price": 470
     },
     {
       "id": 10,
       "title": "Эфиопия Sidamo",
-      "img": "https://example.com/images/coffee4.jpg",
+      "img": "/images/coffee4.jpg",
       "price": 460
     },
     {
       "id": 11,
       "title": "Kenya Uteuzi Jimbo",
-      "img": "https://example.com/images/coffee5.jpg",
+      "img": "/images/coffee5.jpg",
       "price": 490
     },
     {
       "id": 12,
       "title": "Chamerlain Coffee Artwork by Javi Aznarez",
-      "img": "https://example.com/images/coffee6.jpg",
+      "img": "/images/coffee6.jpg",
       "price": 450
     }
   ],
@@ -79,96 +79,96 @@
     {
       "id": 13,
       "title": "Милена",
-      "img": "https://example.com/images/teapot1.jpg",
-      "price": 1200
+      "img": "/images/teapot1.jpg",
+      "price": 2200
     },
     {
       "id": 14,
       "title": "Ирис",
-      "img": "https://example.com/images/teapot2.jpg",
+      "img": "/images/teapot2.jpg",
       "price": 1300
     },
     {
       "id": 15,
       "title": "Аврора",
-      "img": "https://example.com/images/teapot3.jpg",
+      "img": "/images/teapot3.jpg",
       "price": 1250
     },
     {
       "id": 16,
       "title": "Баунти",
-      "img": "https://example.com/images/teapot4.jpg",
-      "price": 1400
+      "img": "/images/teapot4.jpg",
+      "price": 2400
     },
     {
       "id": 17,
       "title": "Сахара",
-      "img": "https://example.com/images/teapot5.jpg",
+      "img": "/images/teapot5.jpg",
       "price": 1350
     },
     {
       "id": 18,
       "title": "Брауни",
-      "img": "https://example.com/images/teapot6.jpg",
-      "price": 1500
+      "img": "/images/teapot6.jpg",
+      "price": 2500
     }
   ],
   "cezves": [
     {
       "id": 19,
       "title": "Бургунди",
-      "img": "https://example.com/images/cezve1.jpg",
+      "img": "/images/cezve1.jpg",
       "price": 800
     },
     {
       "id": 20,
       "title": "Манифест",
-      "img": "https://example.com/images/cezve2.jpg",
+      "img": "/images/cezve2.jpg",
       "price": 850
     },
     {
       "id": 21,
       "title": "Голди",
-      "img": "https://example.com/images/cezve3.jpg",
+      "img": "/images/cezve3.jpg",
       "price": 900
     },
     {
       "id": 22,
       "title": "Мауи",
-      "img": "https://example.com/images/cezve4.jpg",
+      "img": "/images/cezve4.jpg",
       "price": 750
     },
     {
       "id": 23,
       "title": "Сури",
-      "img": "https://example.com/images/cezve5.jpg",
+      "img": "/images/cezve5.jpg",
       "price": 950
     },
     {
       "id": 24,
       "title": "Таджмахал",
-      "img": "https://example.com/images/cezve6.jpg",
-      "price": 1000
+      "img": "/images/cezve6.jpg",
+      "price": 1700
     }
   ],
   "other": [
     {
       "id": 25,
       "title": "Капучино ложечки",
-      "img": "https://example.com/images/other1.jpg",
-      "price": 200
+      "img": "/images/other1.jpg",
+      "price": 450
     },
     {
       "id": 26,
       "title": "Ложка для чая",
-      "img": "https://example.com/images/other2.jpg",
-      "price": 150
+      "img": "/images/other2.jpg",
+      "price": 350
     },
     {
       "id": 27,
       "title": "Кофейный набор (Подставка + Чашка + Ложка)",
-      "img": "https://example.com/images/other3.jpg",
-      "price": 600
+      "img": "/images/other3.jpg",
+      "price": 950
     }
   ]
 }

@@ -19,6 +19,9 @@ app.use(express.json());
 // Middleware для документации API
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+// Middleware для обслуживания статических файлов
+app.use("/images", express.static(path.resolve("public/images")));
+
 // Инициализация данных
 readProductsFromFile()
   .then((data) => {
