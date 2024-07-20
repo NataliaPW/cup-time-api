@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 // Middleware для документации API
-app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Middleware для обслуживания статических файлов
 app.use("/images", express.static(path.resolve("public/images")));
