@@ -1,6 +1,7 @@
 import express from "express";
 import { readFile } from "fs/promises";
 import path from "path";
+import cors from "cors";
 import "express-async-errors"; // для автоматической обработки асинхронных ошибок
 import { check, validationResult } from "express-validator";
 
@@ -8,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 3000; // использование переменной окружения для порта
 
 let products = {};
-
+app.use(cors());
 // Middleware для обработки JSON данных
 app.use(express.json());
 
