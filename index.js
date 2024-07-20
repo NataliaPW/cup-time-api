@@ -44,16 +44,6 @@ app.get("/api/products", (req, res) => {
   res.json(allProducts);
 });
 
-// Маршрут для получения товаров по категориям
-app.get("/api/products/:category", (req, res) => {
-  const { category } = req.params;
-  if (products[category]) {
-    res.json(products[category]);
-  } else {
-    res.status(404).json({ error: "Категория не найдена" });
-  }
-});
-
 // Маршрут для получения одного товара по id
 app.get("/api/product/:id", (req, res) => {
   const { id } = req.params;
@@ -77,6 +67,16 @@ app.get("/api/product/list", (req, res) => {
     .map((id) => findProductById(id))
     .filter((product) => product !== null);
   res.json(list);
+});
+
+// Маршрут для получения товаров по категориям
+app.get("/api/products/:category", (req, res) => {
+  const { category } = req.params;
+  if (products[category]) {
+    res.json(products[category]);
+  } else {
+    res.status(404).json({ error: "Категория не найдена" });
+  }
 });
 
 // Маршрут для создания заказа
