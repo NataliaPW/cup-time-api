@@ -12,6 +12,7 @@ let products = {};
 app.use(cors());
 // Middleware для обработки JSON данных
 app.use(express.json());
+app.use("/images", express.static("images"));
 
 // Функция для чтения данных из файла db.json
 const readProductsFromFile = async () => {
