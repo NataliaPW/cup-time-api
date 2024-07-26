@@ -47,7 +47,7 @@ app.get("/api/products", (req, res) => {
 });
 
 // Маршрут для получения одного товара по id
-app.get("/api/product/:id", (req, res) => {
+app.get("/api/products/:id", (req, res) => {
   const { id } = req.params;
   const product = findProductById(id);
   if (product) {
@@ -58,7 +58,7 @@ app.get("/api/product/:id", (req, res) => {
 });
 
 // Маршрут для получения списка товаров по списку id в пути /api/product/list?ids=1,2,3,4
-app.get("/api/product/list", (req, res) => {
+app.get("/api/products/list", (req, res) => {
   const { ids } = req.query;
   if (!ids) {
     res.status(400).json({ error: "Не указаны id товаров" });
