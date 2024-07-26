@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Middleware для обслуживания статических файлов
-app.use("/images", express.static(path.resolve("/images")));
+app.use("/images", express.static(path.resolve("public/images")));
 
 // Инициализация данных
 readProductsFromFile()
