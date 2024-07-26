@@ -1,5 +1,5 @@
 import { findProductById, getAllProducts } from "../services/productService.js";
-import { products } from "../app.js";
+import { products } from "../index.js";
 
 export const getProducts = (req, res) => {
   const allProducts = getAllProducts(products);

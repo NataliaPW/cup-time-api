@@ -1,6 +1,6 @@
 import { validationResult } from "express-validator";
 import { findProductById } from "../services/productService.js";
-import { products } from "../app.js";
+import { products } from "../index.js";
 
 export const createOrder = (req, res) => {
   const errors = validationResult(req);
