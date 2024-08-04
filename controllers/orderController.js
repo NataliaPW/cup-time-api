@@ -2,6 +2,25 @@ import { validationResult } from "express-validator";
 import { findProductById } from "../services/productService.js";
 import { products } from "../index.js";
 
+// Функция для генерации уникального ID
+const generateOrderId = () => {
+  let id;
+  do {
+    // Генерация случайного числа от 10000 до 99999
+    id = Math.floor(Math.random() * 90000) + 10000;
+  } while (idExists(id)); // Проверка уникальности
+
+  return id;
+};
+
+// Пример функции проверки существования ID
+// В реальном приложении вы бы проверяли это в базе данных
+const idExists = (id) => {
+  // Для демонстрации здесь нет реальной проверки
+  // Необходимо заменить на логику проверки в базе данных
+  return false;
+};
+
 export const createOrder = (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -28,11 +47,15 @@ export const createOrder = (req, res) => {
     };
   });
 
+  // Генерация уникального ID заказа
+  const orderId = generateOrderId();
+
   // Здесь можно добавить логику для сохранения заказа в базу данных или отправки уведомления
 
   res.status(201).json({
     message: "Заказ успешно создан",
     order: {
+      id: orderId,
       name,
       phone,
       address,
